@@ -13,19 +13,27 @@
         }
         @media (max-width : 600px) {
             #notepad{
-                width: 25vw;
+                width: 40vw;
                 height: 20vh;
                
             }
             #notepad span{
                 font-size: 4vw;
             }
+            #main{
+                min-height: 100vh;
+                overflow-y: auto;
+                overflow-x: hiddeng;
+            }
+            body{
+                background-color: #27272A;
+            }
             
         }
     </style>
 </head>
 <body>
-    <div class="w-full h-screen bg-zinc-800 text-white">
+    <div id="main" class="w-full h-screen bg-zinc-800 text-white">
         <div id="overlay"  class="hidden w-full h-screen absolute bg-zinc-800/90">
             <div class="absolute shadow-2xl shadow-gray-500 blur-500 rounded-md top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] w-[50%] bg-zinc-600 rounded-md p-4">
                 <div class="flex justify-between items-center">
